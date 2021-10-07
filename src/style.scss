@@ -1,0 +1,135 @@
+body{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.empty-container{
+	box-sizing: border-box;
+	display: flex;
+	flex-flow:  column nowrap;
+	padding: 30px;
+	//margin: 20px;
+	gap: 10px;
+	height: 100vh;
+	background: linear-gradient(0deg, rgba(169,161,175,1) 0%, rgba(255,237,213,1) 100%);
+	overflow: auto;
+	//max-width: 1000px;
+}
+.list{
+	padding: 10px;
+	border: 2px solid #a5a5a5;
+	border-radius: 10px;
+}
+.waitings__item{
+	display: flex;
+	flex-flow:  row nowrap;
+	justify-content: space-between;
+
+}
+.waitings, .arrived, .declined{
+	//flex: 0 0 calc(33.33% - 10px);
+}
+.item__date-wrapper{
+	display: flex;
+	flex-flow:  row nowrap;
+	gap: 5px;
+}
+h2{
+	cursor: pointer;
+}
+h2.hidden + .list{
+	display: none;
+}
+.waitings__item{
+	padding: 5px;
+	border-radius: 10px;
+//	background: #717171;
+	color: #000;
+	margin-bottom: 10px;
+	text-decoration: none;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	a{
+		color: inherit;
+		margin-left: 5px;
+	}
+}
+.request{
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+.general-info{
+	flex: 0 0 calc(70%);
+}
+.general-info__row{
+	height: 21px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	color: #000;
+}
+.to-main{
+	display: block;
+	flex: 0 0 100%;
+	color: #000;
+	font-weight: 700;
+	text-decoration: none;
+	margin-top: 20px;
+}
+.cancel{
+		margin-left: 10px;
+}
+.request__buttons{
+	box-sizing: border-box;
+	padding-left: 20px;
+	flex: 0 0 30%;
+	display: flex;
+	flex-flow:  column nowrap;
+	justify-content: space-between;
+	padding-top: 6px;
+	padding-bottom: 9px;
+	a{
+		text-decoration: none;
+		display: block;
+		border-radius: 20px;
+		padding: 10px;
+		background-color: rgb(192, 117, 19);
+		color: #fff;
+		height: min-content;
+		width: max-content;
+	}
+	button{
+		text-decoration: none;
+		display: block;
+		border-radius: 20px;
+		padding: 10px;
+		background-color: rgb(192, 117, 19);
+		color: #fff;
+		height: min-content;
+		width: max-content;
+	}
+}
+.request__buttons-row{
+	display: flex;
+	flex-flow: row nowrap;
+}
+.request__buttons_status{
+	box-sizing: border-box;
+	padding-left: 20px;
+	flex: 0 0 30%;
+	display: flex;
+	flex-flow:  row nowrap;
+	button{
+		text-decoration: none;
+		display: block;
+		border-radius: 20px;
+		padding: 10px;
+		background-color: rgb(192, 117, 19);
+		color: #fff;
+		height: min-content;
+	}
+}
